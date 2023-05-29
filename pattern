@@ -1,0 +1,42 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int n,s=1;
+    cin>>n;
+    int a=1;
+    for(int i=1;i<2*n;i++)
+    {
+        
+        cout<<a;
+        a++;
+    }
+    cout<<endl;
+    for(int i=1;i<n;i++)
+    {
+        int a=1;
+        for(int j=i;j<n;j++)
+        {
+            cout<<a;
+            a++;
+        }
+        for(int j=1;j<=s;j++)
+        {
+            cout<<" ";
+            a++;
+        }
+        s+=2;
+        for(int j=i;j<n;j++)
+        {
+            cout<<a;
+            a++;
+        }
+        cout<<endl;
+    }
+}
+output
+4
+1234567
+123 567
+12   67
+1     7
